@@ -2,8 +2,9 @@
 
 Please implement the following function according to the provided documentation.
 Tests are provided for this question in the file tests/test_q2.py."""
-
 def validate_password(password: str) -> bool:
+    """checks if a password meets certain criteria, and returns 'True' 
+    if the password meets the criteria otherwise 'False'"""
     """Determines whether a password meets the requirements.
 
     Requirements:
@@ -24,4 +25,24 @@ def validate_password(password: str) -> bool:
     bool
         True if the password is valid, and false otherwise
     """
-    pass
+    if len(password) < 8:  #Checking if the password has at least 8 characters
+        return False
+#checking if the password meets the other criteria
+    if not any(char.isupper() for char in password):
+        return False
+    if not any(char.islower() for char in password):
+        return False
+    if not any(char.isdigit() for char in password):
+        return False
+    if not any(not char.isalnum() and not char.isspace() for char in password):
+        return False
+    return True
+print(validate_password("ISAARUBa8#"))
+
+
+
+        
+
+
+
+
