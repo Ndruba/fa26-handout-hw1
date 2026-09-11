@@ -7,7 +7,6 @@ from src.q3 import capitalize_words
 
 
 """Please write your tests here."""
-
 def test_capitalize_words_firstletter() -> None:
     """capitalises the first letter in a word"""
     assert capitalize_words("isaac") == "Isaac"
