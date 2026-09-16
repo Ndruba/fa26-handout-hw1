@@ -14,7 +14,6 @@ def validate_password(password: str) -> bool:
     4. Password must contain at least one digit
     5. Password must contain at least one special character (!@#$%^&*)
 
-    
     Parameters
     ----------
     password : str
