@@ -16,5 +16,5 @@ Pawtograder setup working, and making a successful submission."""
 def interests_in_computing() -> None:
     """Prints 'my interests in computing ' to the console."""
     print("I want to be able to build my own engineering consulting website which is globally accessible")
-interests_in_computing()
+
 
