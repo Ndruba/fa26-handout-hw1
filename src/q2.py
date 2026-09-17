@@ -19,10 +19,7 @@ def validate_password(password: str) -> bool:
     password : str
         The password to validate
     
-    Returns
-    -------
-    bool
-        True if the password is valid, and false otherwise
+ 
     """
     if len(password) < 8:  #Checking if the password has at least 8 characters
         return False
